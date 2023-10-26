@@ -1,0 +1,35 @@
+body {
+  padding: 10px;
+  margin: 10px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #07076d;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  color: #07076d;
+}
+
+a {
+  text-decoration: none;
+  color: #131111;
+}
+
+a:hover {
+  color: #669ff1;
+}
+
+.container {
+  padding: 10px 10px 50px 10px;
+}
+
+.weather-app {
+  max-width: 70%;
+  border: solid 1px #abd115;
+  border-radius: 5px;
+  background: linear-gradient(219deg, rgb(115, 252, 185) 0%, #669ff1 100%);
+}
