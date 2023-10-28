@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./Header";
-import Weather from "./Weather";
+import CitySearch from "./CitySearch";
 import Footer from "./Footer";
 
 import "./styles.css";
@@ -10,8 +9,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <div className="weather-app">
-          <Header />
-          <Weather defaultCity="Kharkiv" />
+          <CitySearch />
         </div>
         <Footer />
       </div>
