@@ -13,9 +13,9 @@ export default function Footer() {
             rel="noreferrer"
             className="github"
           >
-            Open-source code{" "}
+            Open-source code
           </a>
-          {" "}by Tetiana Taranova
+          {" "} by Tetiana Taranova
         </small>
       </div>
     </div>

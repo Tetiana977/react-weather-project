@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
-import WeatherIcon from "./WeatherIcon"
+import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 //import axios from "axios";
 
 import "./Weather.css";
@@ -33,18 +34,7 @@ export default function Weather(props) {
         <div className="col-6 main">
           <ul>
             <li>
-              <strong class="me-2" id="current-temperature">
-                {Math.round(props.data.temperature)}
-              </strong>
-              <span className="unit">
-                <a className="activ" id="celsius" href="/">
-                  °C
-                </a>{" "}
-                |{" "}
-                <a id="fahrenheit" href="/">
-                  °F
-                </a>
-              </span>
+              <WeatherTemperature celsius={props.data.temperature} />
             </li>
             <li>
               <span id="temperature-max"></span>
