@@ -1,5 +1,6 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
+import WeatherIcon from "./WeatherIcon"
 //import axios from "axios";
 
 import "./Weather.css";
@@ -23,10 +24,8 @@ export default function Weather(props) {
               {props.data.description}
             </li>
             <li>
-              <img
-                src={props.data.iconUrl}
-                alt={props.data.description}
-                id="icon"
+              <WeatherIcon
+                code={props.data.icon}
               />
             </li>
           </ul>

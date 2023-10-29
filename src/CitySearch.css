@@ -1,13 +1,13 @@
-.Header header {
+.CitySearch header {
   text-align: center;
   padding: 20px 0;
 }
 
-.Header .header {
+.CitySearch .header {
   padding: 0 20px;
 }
 
-.Header .button {
+.CitySearch .button {
   margin-left: 10px;
   background-color: #afeeee;
   border-radius: 10px;
@@ -15,14 +15,19 @@
   color: #282727;
 }
 
-.Header .button:hover {
+.CitySearch .button:hover {
   background-color: #7ccde5;
   color: beige;
 }
 
-.Header .city {
+.CitySearch .city {
   background-color: #afeeee;
   border-radius: 10px;
   border: solid 1px #afeeee;
   text-align: center;
+}
+
+.CitySearch canvas {
+    size: 55px;
+    color: #07076d;
 }

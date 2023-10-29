@@ -15,7 +15,7 @@ export default function Footer() {
           >
             Open-source code{" "}
           </a>
-          by Tetiana Taranova
+          {" "}by Tetiana Taranova
         </small>
       </div>
     </div>

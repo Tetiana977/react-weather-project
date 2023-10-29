@@ -5,6 +5,7 @@ import axios from "axios";
 import Weather from "./Weather";
 
 import "./CitySearch.css";
+import "./styles.css";
 
 export default function CitySearch(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -19,9 +20,7 @@ export default function CitySearch(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
-
       description: response.data.weather[0].description,
-      //iconUrl: "https://openweathermap.org/img/wn/02d@2x.png",
       icon: response.data.weather[0].icon
     });
   }
