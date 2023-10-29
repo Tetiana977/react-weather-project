@@ -6,7 +6,7 @@ import Weather from "./Weather";
 
 import "./CitySearch.css";
 
-export default function CitySearch() {
+export default function CitySearch(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -21,18 +21,17 @@ export default function CitySearch() {
       wind: response.data.wind.speed,
 
       description: response.data.weather[0].description,
-      iconUrl: "https://openweathermap.org/img/wn/02d@2x.png",
-      /*icon: data.weather[0].icon*/
+      //iconUrl: "https://openweathermap.org/img/wn/02d@2x.png",
+      icon: response.data.weather[0].icon
     });
   }
 
   function search() {
-    const apiKey = "b47fdf6445cd8b64ab889be77dbe56d4";
-    let apiUrl =
-      "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric";
+    const apiKey = "7633347349ec94a368e4a15d93744b30";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      
     axios.get(apiUrl).then(handleResponse);
-
-}
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
