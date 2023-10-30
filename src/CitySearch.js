@@ -25,10 +25,17 @@ export default function CitySearch(props) {
     });
   }
 
-  function search() {
+  /*function search() {
     const apiKey = "7633347349ec94a368e4a15d93744b30";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       
+    axios.get(apiUrl).then(handleResponse);
+  }*/
+
+  function search() {
+    const apiKey = "a710bd8bd76400c9658ef649d9e81728";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
     axios.get(apiUrl).then(handleResponse);
   }
 
