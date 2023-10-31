@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import Weather from "./Weather";
+import Forecast from "./Forecast"
 
 import "./CitySearch.css";
 import "./styles.css";
@@ -76,6 +77,7 @@ export default function CitySearch(props) {
           </form>
         </header>
         <Weather data={weatherData} />
+        <Forecast />
       </div>
     );
   } else {
