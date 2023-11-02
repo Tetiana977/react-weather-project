@@ -26,7 +26,7 @@ export default function Weather(props) {
             </li>
             <li>
               <WeatherIcon
-                code={props.data.icon}
+                code={props.data.icon} size={55}
               />
             </li>
           </ul>

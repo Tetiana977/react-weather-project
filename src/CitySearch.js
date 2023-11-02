@@ -16,6 +16,7 @@ export default function CitySearch(props) {
     //console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       city: response.data.name,
@@ -77,7 +78,7 @@ export default function CitySearch(props) {
           </form>
         </header>
         <Weather data={weatherData} />
-        <Forecast />
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
