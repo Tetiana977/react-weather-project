@@ -1,5 +1,5 @@
 body {
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -28,7 +28,8 @@ a:hover {
 }
 
 .weather-app {
-  max-width: 70%;
+  max-width: 75%;
+  padding-bottom: 15px;
   border: solid 1px #abd115;
   border-radius: 5px;
   background: linear-gradient(219deg, rgb(115, 252, 185) 0%, #669ff1 100%);

@@ -16,7 +16,6 @@ export default function Weather(props) {
               <h1 id="city">{props.data.city}</h1>
             </li>
             <li>
-              Last updated:{" "}
               <span id="time">
                 <CurrentDate date={props.data.date} />
               </span>
@@ -35,10 +34,6 @@ export default function Weather(props) {
           <ul>
             <li>
               <WeatherTemperature celsius={props.data.temperature} />
-            </li>
-            <li>
-              <span id="temperature-max"></span>
-              <span id="temperature-min"></span>
             </li>
             <li>
               Humidity: <span id="humidity">{props.data.humidity}</span>%
